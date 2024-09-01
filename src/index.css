@@ -1,0 +1,133 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.page {
+  height: 100vmin;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  background-image: url('https://images.unsplash.com/photo-1724579242963-ea62ff1f0d72?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8');
+}
+.card {
+  height: 96%;
+  width: 34%;
+  position: relative;
+  border-radius: 12px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  overflow: hidden;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  filter: blur(1.2px);
+
+}
+img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+
+}
+.header {
+  height: 16%;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+.header h1 {
+  font-size: 25px;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: aqua;
+}
+.home {
+  height: 70%;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+#uom {
+  height: 90%;
+  width: 90%;
+  align-items:center;
+  text-align: start;
+  justify-content: start;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+li {
+  /* height: 10%; */
+  padding: 7px;
+  width: 96%;
+  list-style: none;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  border-bottom: 0.2px solid #eee;
+  color: green;
+  font-size: larger;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+  background-color: rgba(0, 0, 0, 0.521);
+
+}
+.chat {
+  height: 14%;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  gap: 1.4vw;
+}
+
+
+input {
+  padding: 12px;
+  width: 60%;
+  height: 30%;
+  border: none;
+  outline: none;
+  font-size: larger;
+}
+
+.chat button {
+  height: 60%;
+  width: 17%;
+  border: none;
+  border-radius: 6px;
+  background-image: linear-gradient(to left, orange,rgb(219, 8, 43));
+  cursor: pointer;
+}
+button:hover {
+  background-image: linear-gradient(to left, rgb(219, 8, 43),orange);
+}
+
+
+@media (max-width:600px) {
+  .page {
+    height: 178vmin;
+    width: 100%;
+  }
+  .card {
+    width: 95%;
+  }
+  
+}
